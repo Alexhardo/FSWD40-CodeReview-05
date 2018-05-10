@@ -6,7 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <title>Coders Dating</title>
-    <script src="script\script.js"></script>
+    <!-- <script src="script\script.js"></script> -->
 </head>
 
 <body>
@@ -24,7 +24,7 @@
                 <img class="memimgs" src="imgs\man01.jpg" alt="man">
                 <p class="ilikeit">Like</p>
                 <img class="like" src="imgs\like.png" alt="like">
-                <p class="likes"> 1 </p>
+                <label class="likes"> 1 </label>
             </div>
 
             <div class="mem">
@@ -54,12 +54,13 @@
     </div>
 
 <script>
-	
-$(".mem").click(function(){
+	num=0;
+$(".ilikeit").click(function(){
    var  num = parseInt($(".likes").text());
+   // console.log(document.num);
     $(".likes").text(num+1);
 })
-	
+
 </script>
 
 </body>
