@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+footer  {
+	text-align: center;
+
+}
+
+body{
+		text-align: center;
+
+}
+
+#hd{
+		text-align: center;
+
+	background-color: #9C27B0;
+}
+
+.mem{
+	background-color: #E1BEE7;
+}
