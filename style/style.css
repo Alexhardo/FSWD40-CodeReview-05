@@ -1,8 +1,26 @@
 * {
-
-	
     padding: 0;
     margin: 0;
+}
+
+body #members{
+	display: grid;
+  grid-template-columns: 50% 50%; 
+}
+
+#pc {
+    filter: blur(5px);
+}
+
+.welcome {
+    -webkit-filter: drop-shadow(1px 1px 20px black);
+    /* set a shadow for "Welcome to our website" */
+    position: absolute;
+    font-size: 30px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
 
 footer,header {
@@ -38,7 +56,7 @@ body {
 }
 
 .mem p {
-	cursor: pointer;
+    cursor: pointer;
     background-color: #80DEEA;
     border-radius: 0.5em;
     font-weight: bold;
@@ -54,18 +72,26 @@ body {
     height: 100%;
 }
 
-.members{
-	width: 600px;
-	flex-direction: row;
-	display: flex;
-	flex-wrap: wrap;
+.members {
+    margin: 10px;
+    padding: 10px;
+
+    width: 600px;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.mem {
+ .mem {	
+ 	background-color: #DABCDA;
+    margin: 10px;
+    padding: 10px;}
+
+    /*
     padding: 60px;
     border-style: solid;
     background-color: green;
-}
+} */
 
 body {
     /* width: 100vw;
