@@ -1,20 +1,48 @@
-* {
+* {/* reset */
     padding: 0;
     margin: 0;
 }
 
-body #members{
-	display: grid;
-  grid-template-columns: 50% 50%; 
+
+article { /* set image in article block */
+  background: linear-gradient(rgba(86, 29, 96, 0.3), rgba(86, 29, 96, 0.5)), url(imgs\PC.jpg);
+
+
 }
 
-#pc {
+footer,header { /* set header and footer in the middle */
+    padding: 2em;
+    text-align: center;
+}
+
+footer p {   /* set font in the footer as bold */
+    font-weight: bold;
+}
+
+body { /* center all element in the page and change the font */
+    font-family: calibri;
+    text-align: center;
+}
+
+#hdr { /* set color in the header */
+    background-color: #9C27B0;
+}
+
+body #members{ /* set the member images in grid view */
+display: grid;
+grid-template-columns: 50% 50%; 
+}
+
+#pc { /* set the image of desktop to blur */
     filter: blur(5px);
 }
 
-.welcome {
-    -webkit-filter: drop-shadow(1px 1px 20px black);
-    /* set a shadow for "Welcome to our website" */
+article img { /* resize the image of desktop */
+    width: 55%;
+}
+
+.welcome { /* place the welcome text on the image */
+    -webkit-filter: drop-shadow(1px 1px 20px black);   /* set a shadow for "Welcome to our website" */
     position: absolute;
     font-size: 30px;
     top: 25%;
@@ -23,39 +51,18 @@ body #members{
     color: white;
 }
 
-footer,header {
-    padding: 2em;
-    text-align: center;
-}
-
-article img {
-    width: 55%;
-}
-
-footer p {
-    font-weight: bold;
-}
-
-#container {}
-
-
-body {
-    font-family: calibri;
-    text-align: center;
-}
-
-#hdr {
-    background-color: #9C27B0;
-}
-
-.memimgs {
-    /* members class */
-    background-color: #E1BEE7;
+.memimgs {    /* resize the images of the members */
     width: 15%;
     height: -15%;
 }
 
-.mem p {
+ .mem {  /*set color background to the box */
+    background-color: #DABCDA;
+    margin: 10px;
+    padding: 10px;
+}
+
+.mem p { /* change the shape of LIKE to button */
     cursor: pointer;
     background-color: #80DEEA;
     border-radius: 0.5em;
@@ -65,35 +72,16 @@ body {
     padding: 15px;
     border-style: outset;
     font-size: 15px;
+    margin: 0 ;
 }
 
-.mem like {
-    width: 100%;
-    height: 100%;
-}
 
-.members {
+
+#members { /* set size of the boxes */
     margin: 10px;
     padding: 10px;
-
     width: 600px;
-    flex-direction: row;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-}
-
- .mem {	
- 	background-color: #DABCDA;
-    margin: 10px;
-    padding: 10px;}
-
-    /*
-    padding: 60px;
-    border-style: solid;
-    background-color: green;
-} */
-
-body {
-    /* width: 100vw;
-    height: 100vh; */
 }

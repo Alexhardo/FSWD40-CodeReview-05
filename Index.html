@@ -1,71 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style\style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <meta charset="UTF-8">
-    <title>Coders Dating</title>
-    <!-- <script src="script\script.js"></script> -->
+    <title>coders love</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+   
 </head>
 
 <body>
-    <div id="container">
-        <header id="hdr">
-            <img src="imgs\logo.png" alt="logo">
-        </header>
-        <article>
-            <img id="pc" src="imgs\pc.jpg" alt="">
-        </article>
-        <div class="welcome">
-            <h1>Welcome to our website</h1>
-        </div>
+    <header>
+        <img src="imgs\logo.png" alt="header" width="60%">
+    </header>
 
-        <div id="members">
-
-            <div class="mem">
-                <img class="memimgs" src="imgs\man01.jpg" alt="man">
-                <p class="ilikeit">Like</p>
-                <img class="like" src="imgs\like.png" alt="like">
-                <label class="likes"> 1 </label>
-            </div>
-
-            <div class="mem">
-                <img class="memimgs" src="imgs\girl01.jpg" alt="girl">
-                <p class="ilikeit">Like</p>
-                <img class="like" src="imgs\like.png" alt="like">
-                <label class="likes">1  </label>
-            </div>
-            <div class="mem">
-                <img class="memimgs" src="imgs\man02.jpg" alt="man">
-                <p class="ilikeit">Like</p>
-                <img class="like" src="imgs\like.png" alt="like">
-                <label class="likes">1  </label>
-            </div>
-            <div class="mem">
-                <img class="memimgs" src="imgs\girl02.jpg" alt="girl">
-                <p class="ilikeit">Like</p>
-                <img class="like" src="imgs\like.png" alt="like">
-                <label class="likes"> 1 </label>
-            </div>
-        </div>
-        <hr>
-        <footer>
-            <img src="imgs\footer.png" alt="coder_dating">
-            <p>Copyright &copy; Coders Dating</p>
-        </footer>
+    <div class="welcome">
+        <h1> Welcome to our website</h1>
     </div>
 
-<script>
-	num=0;
-$(".ilikeit").click(function(){
-   var  num = parseInt($(".likes").text());
-   // console.log(document.num);
-    $(".likes").text(num+1);
-})
+    <content id="demo">
+    </content>
 
-</script>
-
+    <br></br>
+    <hr>
+    <footer>
+        <img src="imgs\footer.png" alt="footer" width="20%">
+        <p>Copyright &copy; Coders Dating</p>
+    </footer>
 </body>
+<script type="text/javascript" src="script\script.js"></script>
 
 </html>
